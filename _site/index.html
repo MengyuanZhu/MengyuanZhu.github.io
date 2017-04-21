@@ -152,7 +152,7 @@
     </div>
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg wow zoomIn">
-            <p><span data-i18n="about_me.des">A graduate student at Georgia State Univeristy</span></p>
+            <p><span data-i18n="about_me.des">A graduate student at Georgia State Univeristy <br /> <a href="https://github.com/MengyuanZhu">https://github.com/MengyuanZhu</a></span></p>
         </div>
     </div>
 </div>
@@ -178,10 +178,10 @@
                         <i class="fa fa-plus-square"></i>
                     </div>
                     <div class="vertical-timeline-content wow  rotateInUpRight ">
-                        <h2><span data-i18n="career.company_a">Company A</span></h2>
-                        <p><span data-i18n="career.company_a_desc">I worked at Company A ... </span></p>
-                        <span class="vertical-date"><span data-i18n="career.company_a_date"> Apr. 2016 </span>
-                        <br/> <small><span data-i18n="career.company_a_job">CTO</span></small> </span>
+                        <h2><span data-i18n="career.location_gsu">Georgia State University</span></h2>
+                        <p><span data-i18n="career.location_gsu_desc">M.S. in Computer Science and Ph.D. in Chemistry (GPA:3.9) <br />Program Chair of ACM Georgia State Student Chapter <br />Student Campus Champion of XSEDE </span></p>
+                        <span class="vertical-date"><span data-i18n="career.location_gsu_date"> Aug. 2013 ~ present </span>
+                        <br/> <small><span data-i18n="career.location_gsu_job">Software Developer</span></small> </span>
                     </div>
                 </div>
             
@@ -191,10 +191,10 @@
                         <i class="fa fa-plus-square"></i>
                     </div>
                     <div class="vertical-timeline-content wow  rotateInUpLeft ">
-                        <h2><span data-i18n="career.company_b">Company B</span></h2>
-                        <p><span data-i18n="career.company_b_desc">I worked at Company B ... </span></p>
-                        <span class="vertical-date"><span data-i18n="career.company_b_date"> Jun. 2015 </span>
-                        <br/> <small><span data-i18n="career.company_b_job">Full Stack Developer</span></small> </span>
+                        <h2><span data-i18n="career.location_shandong">Shandong University</span></h2>
+                        <p><span data-i18n="career.location_shandong_desc">B.S. Pharamcy </span></p>
+                        <span class="vertical-date"><span data-i18n="career.location_shandong_date"> Sep. 2009 ~ Jun. 2013 </span>
+                        <br/> <small><span data-i18n="career.location_shandong_job">Full Stack Developer/Python Developer</span></small> </span>
                     </div>
                 </div>
             
@@ -215,36 +215,47 @@
         </div>
     </div>
     <div class="row features-block">
-        <div class="wow zoomIn col-lg-6 col-lg-offset-3">
-            <canvas id="cs" height="450" width="450"></canvas>
+        <div class="wow zoomIn col-lg-6 col-lg-offset-3" style="margin-bottom: 1cm;"">
+            <canvas id="cs" height="550" width="850"></canvas>
         </div>
-        <div class="col-lg-1"></div>
+
+  
         <script>
         var ctx = document.getElementById("cs");
         var data = {
-            labels: "SQL/MongoDB/Redis, Linux, HTML5/CSS/JavaScript, Python/Java/C/Node.js, Machine Learning, Android Development, Scientific Computing".split(","),
+            labels: "SQL/MongoDB/Redis, Linux and other OS, HTML5/CSS/JavaScript, Python/Java/C/Node.js, Machine Learning, Android Development, Scientific Computing".split(","),
             datasets: [{
                 label: "Ability",
-                backgroundColor: "rgba(179,181,198,0.2)",
-                borderColor: "#3385FF",
-                pointBackgroundColor: "#3385FF",
-                pointBorderColor: "#fff",
-                pointHoverBackgroundColor: "#3385FF",
-                pointHoverBorderColor: "#3385FF",
-                data: [80, 100, 70, 75, 70, 65, 75]
+                backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+          
+                data: [80, 95, 70, 75, 70, 65, 75]
                 }]
         };
         var myRadarChart = new Chart(ctx, {
-            type: 'radar',
+            type: 'horizontalBar',
             data: data,
+
             options: {
-                scale: {
-                    responsive: true,
-                    ticks: {min: 0, max: 100},
-                    lineArc: false,
-                    pointLabels: {fontSize: 13},
-                },
+                
                 legend: {display: false},
+                scales: {
+                   
+                    xAxes: [{
+                            display: true,
+                            ticks: {
+                                beginAtZero: true,                                
+                                max: 100
+                            }
+                        }]
+                },
+
             }
         });
         </script>
@@ -266,63 +277,195 @@
         
             
             
-            <div class="col-sm-6 wow  fadeInLeft ">
+            <div class="col-sm-4 wow  fadeInLeft ">
             
               <div class="team-member">
-                  <img src="/static/assets/img/landing/jekyll.png" class="img-responsive img-circle img-small" alt="">
+                  <img src="/static/assets/img/landing/qvector.ico" class="img-responsive img-small" alt="">
                   <h4>
                   
-                  <a href="https://github.com/jarrekk/Jalpc" target="_blank"><span class="navy">Jalpc</span></a>
+                  <a href="https://github.com/MengyuanZhu/QVector" target="_blank"><span class="navy">QVector</span></a>
                   
                   </h4>
-                  <p><span data-i18n="projects.jalpc">This project is my project. I use javescript to get repo's information all my repos have only one request.</span></p>
+                  <p><span data-i18n="projects.QVector">Find chemical linkers with preferred properites. C++/Qt</span></p>
+                  <!--
                   
-                  <div user="jarrekk" repo="Jalpc" class="ghbtn">
-                      <a target="_blank" style="width: 65px;" href="https://github.com/jarrekk/Jalpc/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
-                      <a target="_blank" style="width: 65px;" href="https://github.com/jarrekk/Jalpc/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
+                  <div user="MengyuanZhu" repo="QVector" class="ghbtn">
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/QVector/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/QVector/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
                       <div style="height: 10px;"></div>
                   </div>
                   
+                  -->
               </div>
           </div>
       
             
             
-            <div class="col-sm-6 wow  fadeInRight ">
+            <div class="col-sm-4 wow   fadeInUp  ">
             
               <div class="team-member">
-                  <img src="/static/assets/img/landing/leetcode.png" class="img-responsive img-circle img-small" alt="">
+                  <img src="/static/assets/img/landing/pegasus.png" class="img-responsive img-small" alt="">
                   <h4>
                   
-                  <a href="https://github.com/kamyu104/LeetCode" target="_blank"><span class="navy">LeetCode</span></a>
+                  <a href="https://github.com/MengyuanZhu/Pegasus" target="_blank"><span class="navy">Pegasus</span></a>
                   
                   </h4>
-                  <p><span data-i18n="projects.leetcode">This project is other's project. I use another request to get repo's information.</span></p>
+                  <p><span data-i18n="projects.Pegasus">Mobile phone app to test fluorescne. C#/UWP</span></p>
+                  <!--
                   
-                  <div user="kamyu104" repo="LeetCode" class="ghbtn">
-                      <a target="_blank" style="width: 65px;" href="https://github.com/kamyu104/LeetCode/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
-                      <a target="_blank" style="width: 65px;" href="https://github.com/kamyu104/LeetCode/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
+                  <div user="MengyuanZhu" repo="Pegasus" class="ghbtn">
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/Pegasus/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/Pegasus/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
                       <div style="height: 10px;"></div>
                   </div>
                   
+                  -->
+              </div>
+          </div>
+      
+            
+            
+            <div class="col-sm-4 wow  fadeInRight  ">
+            
+              <div class="team-member">
+                  <img src="/static/assets/img/landing/pokeball.png" class="img-responsive img-small" alt="">
+                  <h4>
+                  
+                  <a href="https://github.com/MengyuanZhu/AdvancedDatabase" target="_blank"><span class="navy">Find pokemon</span></a>
+                  
+                  </h4>
+                  <p><span data-i18n="projects.Find_pokemon">A location based game to find pokemons. Java/Android, MongoDB/Redis, Node.js, Python</span></p>
+                  <!--
+                  
+                  <div user="MengyuanZhu" repo="AdvancedDatabase" class="ghbtn">
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/AdvancedDatabase/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/AdvancedDatabase/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
+                      <div style="height: 10px;"></div>
+                  </div>
+                  
+                  -->
+              </div>
+          </div>
+      
+            
+            
+            <div class="col-sm-4 wow  fadeInLeft ">
+            
+              <div class="team-member">
+                  <img src="/static/assets/img/landing/qadmet.png" class="img-responsive img-small" alt="">
+                  <h4>
+                  
+                  <a href="https://github.com/MengyuanZhu/QADMET" target="_blank"><span class="navy">QADMET</span></a>
+                  
+                  </h4>
+                  <p><span data-i18n="projects.QADMET">ADMET prediction. C++/Qt</span></p>
+                  <!--
+                  
+                  <div user="MengyuanZhu" repo="QADMET" class="ghbtn">
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/QADMET/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/QADMET/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
+                      <div style="height: 10px;"></div>
+                  </div>
+                  
+                  -->
+              </div>
+          </div>
+      
+            
+            
+            <div class="col-sm-4 wow   fadeInUp  ">
+            
+              <div class="team-member">
+                  <img src="/static/assets/img/landing/checklist.png" class="img-responsive img-small" alt="">
+                  <h4>
+                  
+                  <a href="https://github.com/MengyuanZhu/Checklist" target="_blank"><span class="navy">Checklist</span></a>
+                  
+                  </h4>
+                  <p><span data-i18n="projects.checklist">Checklist for security. PHP/CSS/jQuery/MySQL/IIS</span></p>
+                  <!--
+                  
+                  <div user="MengyuanZhu" repo="Checklist" class="ghbtn">
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/Checklist/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/Checklist/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
+                      <div style="height: 10px;"></div>
+                  </div>
+                  
+                  -->
+              </div>
+          </div>
+      
+            
+            
+            <div class="col-sm-4 wow  fadeInRight  ">
+            
+              <div class="team-member">
+                  <img src="/static/assets/img/landing/stock.ico" class="img-responsive img-small" alt="">
+                  <h4>
+                  
+                  <a href="https://github.com/MengyuanZhu/SoftwareEngineering" target="_blank"><span class="navy">Virtual Stock</span></a>
+                  
+                  </h4>
+                  <p><span data-i18n="projects.Virtual_Stock">Virtual Stock trading software. Java/JavaFX</span></p>
+                  <!--
+                  
+                  <div user="MengyuanZhu" repo="SoftwareEngineering" class="ghbtn">
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/SoftwareEngineering/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/SoftwareEngineering/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
+                      <div style="height: 10px;"></div>
+                  </div>
+                  
+                  -->
+              </div>
+          </div>
+      
+            
+            
+            <div class="col-sm-4 wow  fadeInLeft ">
+            
+              <div class="team-member">
+                  <img src="/static/assets/img/landing/pk.png" class="img-responsive img-small" alt="">
+                  <h4>
+                  
+                  <a href="https://github.com/MengyuanZhu/PK_predict" target="_blank"><span class="navy">PK_predict</span></a>
+                  
+                  </h4>
+                  <p><span data-i18n="projects.PK_predict">Predict small molecules's clearance, half-life, distribution of volume and mean residence time. Python/Scikit-learn</span></p>
+                  <!--
+                  
+                  <div user="MengyuanZhu" repo="PK_predict" class="ghbtn">
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/PK_predict/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/PK_predict/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
+                      <div style="height: 10px;"></div>
+                  </div>
+                  
+                  -->
               </div>
           </div>
       
             
             
                 
-            <div class="col-sm-6 wow  fadeInLeft col-sm-offset-3 ">
+            <div class="col-sm-4 wow   fadeInUp   ">
                 
             
               <div class="team-member">
-                  <img src="/static/assets/img/landing/familycode.png" class="img-responsive img-circle img-small" alt="">
+                  <img src="/static/assets/img/landing/AutoRR.png" class="img-responsive img-small" alt="">
                   <h4>
                   
-                  <span class="navy">FamilyCODE Wchat</span>
+                  <a href="https://github.com/MengyuanZhu/AutoRR" target="_blank"><span class="navy">AutoRR</span></a>
                   
                   </h4>
-                  <p><span data-i18n="projects.familycode">This is a shopping mall in wechat, it promotes gene detection. Since time is precious, I write this website with Django, jQuery, weui. This is WuxiNextcode's major product. You can scan project's picture by wechat.</span></p>
+                  <p><span data-i18n="projects.AutoRR">Generate molecule analogs. Python/PyQt, OpenEye</span></p>
+                  <!--
                   
+                  <div user="MengyuanZhu" repo="AutoRR" class="ghbtn">
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/AutoRR/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
+                      <a target="_blank" style="width: 65px;" href="https://github.com/MengyuanZhu/AutoRR/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
+                      <div style="height: 10px;"></div>
+                  </div>
+                  
+                  -->
               </div>
           </div>
       
@@ -332,21 +475,8 @@
 
 </section>
 
-<style>
-iframe {
-  -moz-transform: scale(0.25, 0.25);
-  -webkit-transform: scale(0.25, 0.25);
-  -o-transform: scale(0.25, 0.25);
-  -ms-transform: scale(0.25, 0.25);
-  transform: scale(0.25, 0.25);
-  -moz-transform-origin: top left;
-  -webkit-transform-origin: top left;
-  -o-transform-origin: top left;
-  -ms-transform-origin: top left;
-  transform-origin: top left;
-}
-</style>
-<iframe src="https://www.maimemo.com/share/page/?uid=779139&pid=660" style="display: none;"></iframe>
+
+
 
 
 

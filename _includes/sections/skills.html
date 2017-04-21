@@ -6,36 +6,47 @@
         </div>
     </div>
     <div class="row features-block">
-        <div class="wow zoomIn col-lg-6 col-lg-offset-3">
-            <canvas id="{{ site.data.index.skills.id }}" height="450" width="450"></canvas>
+        <div class="wow zoomIn col-lg-6 col-lg-offset-3" style="margin-bottom: 1cm;"">
+            <canvas id="{{ site.data.index.skills.id }}" height="550" width="850"></canvas>
         </div>
-        <div class="col-lg-1"></div>
+
+  
         <script>
         var ctx = document.getElementById("{{ site.data.index.skills.id }}");
         var data = {
             labels: "{{ site.data.index.skills.aspects }}".split(","),
             datasets: [{
                 label: "{{ site.data.index.skills.label }}",
-                backgroundColor: "rgba(179,181,198,0.2)",
-                borderColor: "#3385FF",
-                pointBackgroundColor: "#3385FF",
-                pointBorderColor: "#fff",
-                pointHoverBackgroundColor: "#3385FF",
-                pointHoverBorderColor: "#3385FF",
+                backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+          
                 data: [{{ site.data.index.skills.percentage }}]
                 }]
         };
         var myRadarChart = new Chart(ctx, {
-            type: 'radar',
+            type: 'horizontalBar',
             data: data,
+
             options: {
-                scale: {
-                    responsive: true,
-                    ticks: {min: 0, max: 100},
-                    lineArc: false,
-                    pointLabels: {fontSize: 13},
-                },
+                
                 legend: {display: false},
+                scales: {
+                   
+                    xAxes: [{
+                            display: true,
+                            ticks: {
+                                beginAtZero: true,                                
+                                max: 100
+                            }
+                        }]
+                },
+
             }
         });
         </script>

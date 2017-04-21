@@ -1,21 +1,61 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jalpc
-  i18n: jalpc
-  gh_user: jarrekk
-  repo: Jalpc
-  img: /static/assets/img/landing/jekyll.png
-  desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
+- name: QVector
+  i18n: QVector
+  gh_user: MengyuanZhu
+  repo: QVector
+  img: /static/assets/img/landing/qvector.ico
+  desc: Find chemical linkers with preferred properites. C++/Qt 
 
-- name: LeetCode
-  i18n: leetcode
-  gh_user: kamyu104
-  repo: LeetCode
-  img: /static/assets/img/landing/leetcode.png
-  desc: This project is other's project. I use another request to get repo's information.
+- name: Pegasus
+  i18n: Pegasus
+  gh_user: MengyuanZhu
+  repo: Pegasus
+  img: /static/assets/img/landing/pegasus.png
+  desc: Mobile phone app to test fluorescne. C#/UWP
 
-- name: FamilyCODE Wchat
-  i18n: familycode
-  img: /static/assets/img/landing/familycode.png
-  desc: This is a shopping mall in wechat, it promotes gene detection. Since time is precious, I write this website with Django, jQuery, weui. This is WuxiNextcode's major product. You can scan project's picture by wechat.
+- name: Find pokemon	
+  i18n: Find_pokemon
+  gh_user: MengyuanZhu
+  repo: AdvancedDatabase
+  img: /static/assets/img/landing/pokeball.png
+  desc: A location based game to find pokemons. Java/Android, MongoDB/Redis, Node.js, Python
+
+- name: QADMET	
+  i18n: QADMET
+  gh_user: MengyuanZhu
+  repo: QADMET
+  img: /static/assets/img/landing/qadmet.png
+  desc: ADMET prediction. C++/Qt
+
+
+- name: Checklist	
+  i18n: checklist
+  gh_user: MengyuanZhu
+  repo: Checklist	
+  img: /static/assets/img/landing/checklist.png
+  desc: Checklist for security. PHP/CSS/jQuery/MySQL/IIS
+
+- name: Virtual Stock	
+  i18n: Virtual_Stock
+  gh_user: MengyuanZhu
+  repo: SoftwareEngineering	
+  img: /static/assets/img/landing/stock.ico
+  desc: Virtual Stock trading software. Java/JavaFX
+
+- name: PK_predict	
+  i18n: PK_predict
+  gh_user: MengyuanZhu
+  repo: PK_predict
+  img: /static/assets/img/landing/pk.png
+  desc: Predict small molecules's clearance, half-life, distribution of volume and mean residence time. Python/Scikit-learn
+
+- name: AutoRR	
+  i18n: AutoRR	
+  gh_user: MengyuanZhu
+  repo: AutoRR	
+  img: /static/assets/img/landing/AutoRR.png
+  desc: Generate molecule analogs. Python/PyQt, OpenEye
+
+

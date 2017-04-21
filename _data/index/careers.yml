@@ -1,29 +1,29 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Company A
-    i18n: company_a
+    detail: Georgia State University
+    i18n: location_gsu
   desc:
-    detail: I worked at Company A ...
-    i18n: company_a_desc
+    detail: M.S. in Computer Science and Ph.D. in Chemistry (GPA:3.9) <br />Program Chair of ACM Georgia State Student Chapter <br />Student Campus Champion of XSEDE
+    i18n: location_gsu_desc
   date:
-    detail: Apr. 2016
-    i18n: company_a_date
+    detail: Aug. 2013 ~ present
+    i18n: location_gsu_date
   job:
-    detail: CTO
-    i18n: company_a_job
+    detail: Software Developer
+    i18n: location_gsu_job
   icon: fa-plus-square
 
 - name:
-    detail: Company B
-    i18n: company_b
+    detail: Shandong University
+    i18n: location_shandong
   desc:
-    detail: I worked at Company B ...
-    i18n: company_b_desc
+    detail: B.S. Pharamcy
+    i18n: location_shandong_desc
   date:
-    detail: Jun. 2015
-    i18n: company_b_date
+    detail: Sep. 2009 ~ Jun. 2013
+    i18n: location_shandong_date
   job:
-    detail: Full Stack Developer
-    i18n: company_b_job
+    detail: Full Stack Developer/Python Developer
+    i18n: location_shandong_job
   icon: fa-plus-square
