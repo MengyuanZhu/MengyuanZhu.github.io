@@ -16,7 +16,7 @@
   desc: Mobile phone app to test fluorescne. C#/UWP
 
 - name: Find pokemon	
-  i18n: Find pokemon
+  i18n: Find_pokemon
   gh_user: MengyuanZhu
   repo: AdvancedDatabase
   img: /static/assets/img/landing/pokeball.png
@@ -28,6 +28,21 @@
   repo: QADMET
   img: /static/assets/img/landing/qadmet.png
   desc: ADMET prediction. C++/Qt
+
+
+- name: Checklist	
+  i18n: checklist
+  gh_user: MengyuanZhu
+  repo: Checklist	
+  img: /static/assets/img/landing/checklist.png
+  desc: Checklist for security. PHP/CSS/jQuery/MySQL/IIS
+
+- name: Virtual Stock	
+  i18n: Virtual_Stock
+  gh_user: MengyuanZhu
+  repo: SoftwareEngineering	
+  img: /static/assets/img/landing/stock.ico
+  desc: Virtual Stock trading software. Java/JavaFX
 
 - name: PK_predict	
   i18n: PK_predict
@@ -42,4 +57,5 @@
   repo: AutoRR	
   img: /static/assets/img/landing/AutoRR.png
   desc: Generate molecule analogs. Python/PyQt, OpenEye
+
 
