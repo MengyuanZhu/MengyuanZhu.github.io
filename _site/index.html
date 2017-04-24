@@ -216,7 +216,7 @@
     </div>
     <div class="row features-block">
         <div class="wow zoomIn col-lg-6 col-lg-offset-3" style="margin-bottom: 1cm;"">
-            <canvas id="cs" height="550" width="850"></canvas>
+            <canvas id="cs" height="550" width="1050"></canvas>
         </div>
 
   
@@ -227,12 +227,13 @@
             datasets: [{
                 label: "Ability",
                 backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(255, 99, 132)',
+                'rgba(54, 162, 235)',
+                'rgba(255, 206, 86)',
+                'rgba(75, 192, 192)',
+                'rgba(153, 102, 255)',
+                'rgba(255, 159, 64)',
+                'rgba(153, 99, 132)'
             ],
           
                 data: [80, 95, 70, 75, 70, 65, 75]
@@ -251,9 +252,21 @@
                             display: true,
                             ticks: {
                                 beginAtZero: true,                                
-                                max: 100
-                            }
-                        }]
+                                max: 100,
+                                fontSize: 18,
+                                fontColor: "#000"
+                            },
+                            
+                        }],
+
+                    yAxes: [{
+                            display: true,
+                            ticks: {
+                                fontSize: 18,
+                                fontColor: "#000"
+                            },
+                            
+                        }]    
                 },
 
             }
