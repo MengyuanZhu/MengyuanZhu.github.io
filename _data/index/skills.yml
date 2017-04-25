@@ -1,6 +1,6 @@
 # skills section data
 
 label: Ability
-id : Programming
+id : Programming Language
 aspects:  Python,Java,C++,C#, HTML5,CSS,JavaScript
 percentage: 95, 80, 85, 65, 95, 70, 75

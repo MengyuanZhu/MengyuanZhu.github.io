@@ -22,7 +22,8 @@
             labels: "{{ site.data.index.skills.aspects }}".split(","),
             datasets: [{
                 label: "{{ site.data.index.skills.label }}",
-                backgroundColor: 'rgba(51, 133, 255,0.8)',          
+                backgroundColor: 'rgba(51, 133, 255,0.6)', 
+                hoverBackgroundColor: 'rgba(51, 133, 255,1)',         
                 data: [{{ site.data.index.skills.percentage }}]
                 }]
         };
@@ -59,7 +60,8 @@
             labels: "{{ site.data.index.skills2.aspects }}".split(","),
             datasets: [{
                 label: "{{ site.data.index.skills2.label }}",
-                backgroundColor: 'rgba(51, 133, 255,0.8)',          
+                backgroundColor: 'rgba(51, 133, 255,0.6)', 
+                hoverBackgroundColor: 'rgba(51, 133, 255,1)',          
                 data: [{{ site.data.index.skills2.percentage }}]
                 }]
         };

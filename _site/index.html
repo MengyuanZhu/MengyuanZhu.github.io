@@ -146,10 +146,10 @@
         
         <!-- avatar -->
         <div class="col-xs-4">
-            <div class="team-member wow zoomIn">
+            <div class="team-member wow zoomIn text-center ">
                 <img src="static/assets/img/landing/avatar.jpg" height="110" width="110" class="img-responsive img-circle" alt="">
                 <h4>Mengyuan Zhu</h4>
-                <p>E-mail: zhumengyuan1024@gmail.com</p>
+                
                 <ul class="list-inline social-icon">
                     
                     <li><a href="https://github.com/MengyuanZhu" target="blank"><i class="fa fa-github"></i></a></li>
@@ -189,8 +189,8 @@
         
     </div>
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center m-t-md m-b-md wow zoomIn">            
-            <span data-i18n="about_me.des">A graduate student at Georgia State Univeristy, Atlanta, GA <br /> <a href="https://github.com/MengyuanZhu">https://github.com/MengyuanZhu</a></span>
+        <div class="col-lg-8 col-lg-offset-2 text-center m-t-0 m-b-md wow zoomIn">            
+            <span data-i18n="about_me.des"><h5>zhumengyuan1024@gmail.com</h5>A graduate student at Georgia State Univeristy, Atlanta, GA <br /> <a href="https://github.com/MengyuanZhu">https://github.com/MengyuanZhu</a></span>
         </div>
     </div>
 </div>
@@ -255,21 +255,22 @@
     <div class="row features-block">
 
         <div class="wow zoomIn col-lg-6 text-center" style="margin-bottom: 1cm;"">
-            <h4>Programming</h4>
-            <canvas id="Programming" height="250" width="400"></canvas>
+            <h4>Programming Language</h4>
+            <canvas id="Programming Language" height="250" width="400"></canvas>
         </div>
         <div class="wow zoomIn col-lg-6 text-center" style="margin-bottom: 1cm;"">
-            <h4>Other</h4>
-            <canvas id="Other" height="250" width="400"></canvas>
+            <h4>Technology</h4>
+            <canvas id="Technology" height="250" width="400"></canvas>
         </div>
 
         <script>
-        var ctx = document.getElementById("Programming");
+        var ctx = document.getElementById("Programming Language");
         var data = {
             labels: "Python,Java,C++,C#, HTML5,CSS,JavaScript".split(","),
             datasets: [{
                 label: "Ability",
-                backgroundColor: 'rgba(51, 133, 255,0.8)',          
+                backgroundColor: 'rgba(51, 133, 255,0.6)', 
+                hoverBackgroundColor: 'rgba(51, 133, 255,1)',         
                 data: [95, 80, 85, 65, 95, 70, 75]
                 }]
         };
@@ -301,13 +302,14 @@
         </script>
   
         <script>
-        var ctx = document.getElementById("Other");
+        var ctx = document.getElementById("Technology");
         var data = {
-            labels: "SQL, Linux, Machine Learning, Parallel Computing, Android Dev, MongoDB/Redis, Design Pattern".split(","),
+            labels: "Machine Learning,SQL, Parallel Computing,Linux,   Android Dev, MongoDB/Redis, Design Pattern".split(","),
             datasets: [{
                 label: "Ability",
-                backgroundColor: 'rgba(51, 133, 255,0.8)',          
-                data: [80, 95, 70, 85, 65, 75, 60]
+                backgroundColor: 'rgba(51, 133, 255,0.6)', 
+                hoverBackgroundColor: 'rgba(51, 133, 255,1)',          
+                data: [70,80, 95,  65,85,  75, 60]
                 }]
         };
         var myRadarChart = new Chart(ctx, {
