@@ -1,0 +1,6 @@
+# skills section data
+
+label: Ability
+id : Other
+aspects: SQL, Linux, Machine Learning, Parallel Computing, Android Dev, MongoDB/Redis, Design Pattern
+percentage: 80, 95, 70, 85, 65, 75, 60

@@ -6,60 +6,86 @@
         </div>
     </div>
     <div class="row features-block">
-        <div class="wow zoomIn col-lg-6 col-lg-offset-3" style="margin-bottom: 1cm;"">
-            <canvas id="{{ site.data.index.skills.id }}" height="550" width="1050"></canvas>
+
+        <div class="wow zoomIn col-lg-6 text-center" style="margin-bottom: 1cm;"">
+            <h4>{{ site.data.index.skills.id }}</h4>
+            <canvas id="{{ site.data.index.skills.id }}" height="250" width="400"></canvas>
+        </div>
+        <div class="wow zoomIn col-lg-6 text-center" style="margin-bottom: 1cm;"">
+            <h4>{{ site.data.index.skills2.id }}</h4>
+            <canvas id="{{ site.data.index.skills2.id }}" height="250" width="400"></canvas>
         </div>
 
-  
         <script>
         var ctx = document.getElementById("{{ site.data.index.skills.id }}");
         var data = {
             labels: "{{ site.data.index.skills.aspects }}".split(","),
             datasets: [{
                 label: "{{ site.data.index.skills.label }}",
-                backgroundColor: [
-                'rgba(255, 99, 132)',
-                'rgba(54, 162, 235)',
-                'rgba(255, 206, 86)',
-                'rgba(75, 192, 192)',
-                'rgba(153, 102, 255)',
-                'rgba(255, 159, 64)',
-                'rgba(153, 99, 132)'
-            ],
-          
+                backgroundColor: 'rgba(51, 133, 255,0.8)',          
                 data: [{{ site.data.index.skills.percentage }}]
                 }]
         };
         var myRadarChart = new Chart(ctx, {
             type: 'horizontalBar',
             data: data,
-
-            options: {
-                
+            options: {                
                 legend: {display: false},
-                scales: {
-                   
+                scales: {                   
                     xAxes: [{
                             display: true,
                             ticks: {
                                 beginAtZero: true,                                
                                 max: 100,
-                                fontSize: 18,
+                                fontSize: 15,
                                 fontColor: "#000"
-                            },
-                            
+                            },                            
                         }],
-
                     yAxes: [{
                             display: true,
                             ticks: {
-                                fontSize: 18,
+                                fontSize: 15,
                                 fontColor: "#000"
-                            },
-                            
+                            },                            
                         }]    
                 },
-
+            }
+        });
+        </script>
+  
+        <script>
+        var ctx = document.getElementById("{{ site.data.index.skills2.id }}");
+        var data = {
+            labels: "{{ site.data.index.skills2.aspects }}".split(","),
+            datasets: [{
+                label: "{{ site.data.index.skills2.label }}",
+                backgroundColor: 'rgba(51, 133, 255,0.8)',          
+                data: [{{ site.data.index.skills2.percentage }}]
+                }]
+        };
+        var myRadarChart = new Chart(ctx, {
+            type: 'horizontalBar',
+            data: data,
+            options: {                
+                legend: {display: false},
+                scales: {                   
+                    xAxes: [{
+                            display: true,
+                            ticks: {
+                                beginAtZero: true,                                
+                                max: 100,
+                                fontSize: 15,
+                                fontColor: "#000"
+                            },                            
+                        }],
+                    yAxes: [{
+                            display: true,
+                            ticks: {
+                                fontSize: 15,
+                                fontColor: "#000"
+                            },                            
+                        }]    
+                },
             }
         });
         </script>

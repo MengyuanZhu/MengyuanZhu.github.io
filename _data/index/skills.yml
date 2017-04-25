@@ -1,6 +1,6 @@
 # skills section data
 
 label: Ability
-id : cs
-aspects: SQL/MongoDB/Redis, Linux and other OS, HTML5/CSS/JavaScript, Python/Java/C/Node.js, Machine Learning, Android Development, Scientific Computing
-percentage: 80, 95, 70, 75, 70, 65, 75
+id : Programming
+aspects:  Python,Java,C++,C#, HTML5,CSS,JavaScript
+percentage: 95, 80, 85, 65, 95, 70, 75

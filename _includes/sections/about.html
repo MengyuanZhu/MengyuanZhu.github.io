@@ -22,6 +22,7 @@
             <div class="team-member wow zoomIn">
                 <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
                 <h4>{{ site.author.first_name }} {{ site.author.last_name }}</h4>
+                <p>E-mail: zhumengyuan1024@gmail.com</p>
                 <ul class="list-inline social-icon">
                     {% if site.author.github_username %}
                     <li><a href="https://github.com/{{ site.author.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
@@ -57,8 +58,8 @@
         {% endfor %}
     </div>
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg wow zoomIn">
-            <p><span data-i18n="about_me.des">{{ site.author.desc }}</span></p>
+        <div class="col-lg-8 col-lg-offset-2 text-center m-t-md m-b-md wow zoomIn">            
+            <span data-i18n="about_me.des">{{ site.author.desc }}</span>
         </div>
     </div>
 </div>
