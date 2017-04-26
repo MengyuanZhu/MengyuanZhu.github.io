@@ -16823,8 +16823,8 @@ a.forum-item-title:hover {
 #vertical-timeline {
     position: relative;
     padding: 0;
-    margin-top: 1em;
-    margin-bottom: 1em
+    margin-top: 2em;
+    margin-bottom: 2em
 }
 
 #vertical-timeline::before {
@@ -18494,7 +18494,7 @@ body.landing-page {
 
 .landing-page .features-block,
 .landing-page .features-text {
-    margin-top: 20px
+    margin-top: 40px
 }
 
 .landing-page .features small {
@@ -18541,19 +18541,17 @@ body.landing-page {
     border-radius: 50px
 }
 
-.social-icon {
+.landing-page .social-icon a:hover {
+    background: #3385ff
+}
+
+.social-icon  {
     background: #3385ff;
     color: #fff;
     padding: 7px 6px;
     height: 28px;
     width: 28px;
-    
     border-radius: 50px
-}
-
-
-.landing-page .social-icon a:hover {
-    background: #3385ff
 }
 
 .landing-page .img-small {
@@ -18745,4 +18743,3 @@ body.landing-page {
     -o-transform:translatZ(0) scale(1.20); /* Opera */
     transform:translatZ(0) scale(1.20);
 }
-  

@@ -18545,6 +18545,15 @@ body.landing-page {
     background: #3385ff
 }
 
+.social-icon  {
+    background: #3385ff;
+    color: #fff;
+    padding: 7px 6px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px
+}
+
 .landing-page .img-small {
     height: 88px;
     width: 88px
@@ -18716,4 +18725,21 @@ body.landing-page {
         padding: 9px 10px;
         border: none
     }
+}
+
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+    -moz-transition: all .3s ease; /* Firefox */
+    -o-transition: all .3s ease; /* IE 9 */
+    -ms-transition: all .3s ease; /* Opera */
+    transition: all .3s ease;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.20); /* Opera */
+    transform:translatZ(0) scale(1.20);
 }
