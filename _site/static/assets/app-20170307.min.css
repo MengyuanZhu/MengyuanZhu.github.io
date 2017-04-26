@@ -16823,8 +16823,8 @@ a.forum-item-title:hover {
 #vertical-timeline {
     position: relative;
     padding: 0;
-    margin-top: 2em;
-    margin-bottom: 2em
+    margin-top: 1em;
+    margin-bottom: 1em
 }
 
 #vertical-timeline::before {
@@ -18494,7 +18494,7 @@ body.landing-page {
 
 .landing-page .features-block,
 .landing-page .features-text {
-    margin-top: 40px
+    margin-top: 20px
 }
 
 .landing-page .features small {
@@ -18540,6 +18540,17 @@ body.landing-page {
     display: block;
     border-radius: 50px
 }
+
+.social-icon {
+    background: #3385ff;
+    color: #fff;
+    padding: 7px 6px;
+    height: 28px;
+    width: 28px;
+    
+    border-radius: 50px
+}
+
 
 .landing-page .social-icon a:hover {
     background: #3385ff

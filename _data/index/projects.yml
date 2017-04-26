@@ -6,28 +6,28 @@
   gh_user: MengyuanZhu
   repo: QVector
   img: /static/assets/img/landing/qvector.ico
-  desc: Find chemical linkers with preferred properites. C++/Qt 
+  desc: Find chemical linkers with preferred properites. <h4>C++/Qt/OpenGL/SQLite</h4>
 
 - name: Pegasus
   i18n: Pegasus
   gh_user: MengyuanZhu
   repo: Pegasus
   img: /static/assets/img/landing/pegasus.png
-  desc: Mobile phone app to test fluorescne. C#/UWP
+  desc: Mobile phone app to test fluorescne. <h4>C#/UWP</h4>
 
 - name: Find pokemon	
   i18n: Find_pokemon
   gh_user: MengyuanZhu
   repo: AdvancedDatabase
   img: /static/assets/img/landing/pokeball.png
-  desc: A location based game to find pokemons. Java/Android, MongoDB/Redis, Node.js, Python
+  desc: A location based game to find pokemons. <h4>Java/Android/MongoDB/Redis/Node.js/Python</h4>
 
 - name: QADMET	
   i18n: QADMET
   gh_user: MengyuanZhu
   repo: QADMET
   img: /static/assets/img/landing/qadmet.png
-  desc: ADMET prediction. C++/Qt
+  desc: ADMET prediction. <h4>C++/Qt/OpenBabel</h4>
 
 
 - name: Checklist	
@@ -35,27 +35,27 @@
   gh_user: MengyuanZhu
   repo: Checklist	
   img: /static/assets/img/landing/checklist.png
-  desc: Checklist for security. PHP/CSS/jQuery/MySQL/IIS
+  desc: Checklist for security. <h4>PHP/CSS/jQuery/MySQL/IIS</h4>
 
 - name: Virtual Stock	
   i18n: Virtual_Stock
   gh_user: MengyuanZhu
   repo: SoftwareEngineering	
   img: /static/assets/img/landing/stock.ico
-  desc: Virtual Stock trading software. Java/JavaFX
+  desc: Virtual Stock trading software (team work). <h4>Java/JavaFX</h4>
 
 - name: PK_predict	
   i18n: PK_predict
   gh_user: MengyuanZhu
   repo: PK_predict
   img: /static/assets/img/landing/pk.png
-  desc: Predict small molecules's clearance, half-life, distribution of volume and mean residence time. Python/Scikit-learn
+  desc: Predict small molecules's clearance, half-life, distribution of volume and mean residence time. <h4>Python/Scikit-learn</h4>
 
 - name: AutoRR	
   i18n: AutoRR	
   gh_user: MengyuanZhu
   repo: AutoRR	
   img: /static/assets/img/landing/AutoRR.png
-  desc: Generate molecule analogs. Python/PyQt, OpenEye
+  desc: Generate molecule analogs. <h4>Python/PyQt/OpenEye</h4>
 
 
