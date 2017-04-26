@@ -19,7 +19,9 @@
             {% endif %}
               <div class="team-member">
                   <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">
-                  <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-small" alt="">
+                  <div class="img-hover text-center">
+                  <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-small " alt="">
+                  </div>
                   <h4>
                   {% if project.repo %}
                   <span class="navy">{{ project.name }}</span></a>
