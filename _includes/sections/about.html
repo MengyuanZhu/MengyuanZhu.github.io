@@ -28,34 +28,30 @@
                     <span style="font-size:18px">&nbsp;{{ site.author.github_username }}</span>
                 </a>
             </p>
-            {% endif %} {% if site.author.linkedin_id %}
+            {% endif %} 
+            <p>
+                	<a href="https://goo.gl/maps/jAM8JrQ7KZy">
+                    <span class="fa fa-lg fa-location-arrow social-icon"></span>
+                    <span style="font-size:18px">&nbsp;Georgia State University, Atlanta, GA</span>
+              		</a>
+            </p>
+           
+			{% if site.author.linkedin_id %}
             <p>
                 <a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" target="blank">
                     <span class="fa fa-lg fa-linkedin social-icon"></span>
                     <span style="font-size:18px">&nbsp;{{ site.author.linkedin_id }}</span>
                 </a>
             </p>
-            {% endif %} {% if site.author.facebook_username %}
-            <p>
-                <a href="https://www.facebook.com/{{ site.author.facebook_username }}" target="blank">
-                    <span class="fa fa-lg fa-facebook social-icon"></span>
-                </a>
-            </p>
-            {% endif %} {% if site.author.twitter_username %}
-            <p>
-                <a href="https://twitter.com/{{ site.author.twitter_username }}" target="blank">
-                    <span class="fa fa-lg fa-twitter social-icon"></span>
-                    <span style="font-size:18px">&nbsp;@{{ site.author.twitter_username }}</span>
-                </a>
-            </p>
-            {% endif %} {% if site.author.email %}
+            {% endif %} 
+
             <p>
                 <a href="mailto:{{ site.author.email }}"> 
                     <span class="fa fa-lg fa-envelope-o social-icon"></span>
                     <span style="font-size:18px">&nbsp;{{ site.author.email }}</span>
                 </a> 
             </p>
-            {% endif %} {% if site.author.cv %}
+            {% if site.author.cv %}
             <p>
                 <a href="{{ site.author.cv }}" target="blank">
                     <i class="fa fa-2x fa-file-pdf-o"></i>
@@ -65,19 +61,11 @@
             {% endif %}
         </div>
 
-        <div class="col-lg-4" style="margin-top: 20px;">
+        <div class="col-lg-4" style="margin-top: 00px;">
             <div class="team-member wow zoomIn text-center">
-                
-                <h4>
-                    Gradaute student 
-                </h4>
-                <p>
-                    Georgia State University
-                </p>
-                <p>
-                    Atlanta, GA
-                </p>
-                
+            
+            <img src="static/assets/img/qr.png">
+              <h4>Email</h4>  
             </div>
         </div>
 
