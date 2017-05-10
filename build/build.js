@@ -15,10 +15,8 @@ rm('-rf', 'static/assets/*.min.js');
 rm('-rf', 'static/assets/*.min.css');
 
 // change link/src files to new file path
-sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/index_head.html');
-sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/head.html');
-sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/category.html');
-sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '404.html');
+sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '../_includes/index_head.html');
+sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '../404.html');
 
 
 // compress js files function

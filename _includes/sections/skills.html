@@ -62,12 +62,14 @@
                 label: "{{ site.data.index.skills2.label }}",
                 backgroundColor: 'rgba(51, 133, 255,0.6)', 
                 hoverBackgroundColor: 'rgba(51, 133, 255,1)',          
-                data: [{{ site.data.index.skills2.percentage }}]
+                data: [{{ site.data.index.skills2.percentage }}],
+                details: "{{ site.data.index.skills2.details }}".split(",")
                 }]
         };
         var myRadarChart = new Chart(ctx, {
             type: 'horizontalBar',
             data: data,
+
             options: {                
                 legend: {display: false},
                 scales: {                   
@@ -88,7 +90,17 @@
                             },                            
                         }]    
                 },
-            }
+                tooltips: {
+                	bodyFontSize: 20,
+			        callbacks: {
+			            label: function(tooltipItem, data) {
+			            	var value = data.datasets[0].details[tooltipItem.index];
+			                return value;
+			            }
+			        }
+		    	}
+            },
+
         });
         </script>
     </div>

@@ -2,5 +2,6 @@
 
 label: Ability
 id : Technology
-aspects: Machine Learning,SQL, Parallel Computing,Linux,   Android Dev, MongoDB/Redis, Design Pattern
-percentage: 70,80, 95,  65,85,  75, 60
+aspects: Machine Learning, Database, HPC, OS, Mobile Dev, GUI, SWE
+percentage: 70, 80, 95,  65, 85,  75, 60
+details: Keras/scikit-learn/Matlab, SQL/MongoDB/Redis, MPI/OpenMP,  Windows/Debian/CentOS, Android/UWP,  Qt/JavaFX, Design Patterns/Documentation
