@@ -2,6 +2,6 @@
 
 label: Ability
 id : Technology
-aspects: Machine Learning, Database, OS, HPC,  Mobile Dev, GUI, SWE
+aspects: Machine Learning, Database, Operating System, Scientific Computing,  Mobile Development, User Interface, Software Engineering
 percentage: 70, 80, 95,  65, 85,  75, 60
 details: Keras/scikit-learn/Matlab, SQL/MongoDB/Redis, Windows/Debian/CentOS, MPI/OpenMP, Android/UWP, Qt/JavaFX, Design Patterns/Documentation
