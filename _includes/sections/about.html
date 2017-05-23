@@ -61,25 +61,19 @@
             {% endif %}
         </div>
 
-        <div class="col-lg-4" style="margin-top: 00px;">
-            <div class="team-member wow zoomIn text-center">
-                {% for career in site.data.index.careers %}              
-                        
-                        <div class="wow">                           
-                            <h4><i class="fa fa-sm {{ career.icon }} social-icon"></i>
+        <div class="col-lg-4 wow zoomIn" style="margin-top: 0px;">          
+                {% for career in site.data.index.careers %} 
+                            <h4>
+                            <i class="fa fa-sm {{ career.icon }} social-icon"></i>
                             <span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }} </span>
                             <span style="font-weight: normal;"> ({{ career.date.detail }})</span>
-                            </h4>
-                           
-                            <span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail }} </span>
-                            
-                           
-                           
-                        </div>
-                   
+                            </h4>                           
+                            <div class="text-center">
+                            <span data-i18n="career.{{ career.desc.i18n }}" >{{ career.desc.detail }} </span>
+                            </div>
+
                 {% endfor %}
 
-            </div>
         </div>
 
        
