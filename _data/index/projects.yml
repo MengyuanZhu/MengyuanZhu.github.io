@@ -13,7 +13,7 @@
   gh_user: MengyuanZhu
   repo: Pegasus
   img: /static/assets/img/landing/pegasus.png
-  desc: Mobile phone app to test fluorescne. <h4>C#/UWP</h4>
+  desc: Mobile phone app to test fluorescne. <h4>C#/UWP/Python</h4>
 
 - name: Find pokemon	
   i18n: Find_pokemon
