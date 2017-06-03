@@ -58,4 +58,11 @@
   img: /static/assets/img/landing/AutoRR.png
   desc: Generate molecule analogs. <h4>Python/PyQt/OpenEye</h4>
 
+- name: Deep SMILES	
+  i18n: Deep SMILES	
+  gh_user: MengyuanZhu
+  repo: Deep-SMILES	
+  img: /static/assets/img/landing/deepsmiles.png
+  desc: Deep learning for medicinal chemistry. <h4>Python/Keras</h4>
+
 
