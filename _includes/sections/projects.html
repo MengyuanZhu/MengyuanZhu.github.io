@@ -12,10 +12,10 @@
                 {% if forloop.last == forloop.first %}
             <div class="col-sm-4 wow col-sm-offset-3 zoomIn">
                 {% else %}
-            <div class="col-sm-4 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} {% if loopindex == 0 %} fadeInRight {% else %} fadeInUp {% endif %}  {% endif %}">
+            <div class="col-sm-4 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} {% if loopindex == 0 %} fadeInRight {% else %} swing {% endif %}  {% endif %}">
                 {% endif %}
             {% else %}
-            <div class="col-sm-4 wow {% if loopindex == 1 %} fadeInLeft {% else %} {% if loopindex == 0 %}fadeInRight {% else %} fadeInUp {% endif %} {% endif %}">
+            <div class="col-sm-4 wow {% if loopindex == 1 %} fadeInLeft {% else %} {% if loopindex == 0 %}fadeInRight {% else %} swing {% endif %} {% endif %}">
             {% endif %}
               <div class="team-member">
                   <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">
