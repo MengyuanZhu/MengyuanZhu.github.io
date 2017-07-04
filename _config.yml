@@ -16,7 +16,7 @@ author:  # change following line to your infomation.
   last_name: Zhu  # Be used at index page about me section.
   avatar: static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
   github_username: MengyuanZhu  # Leave blank if you don't have now
-  linkedin_id: mengyuan-zhu-a3361842 # Leave blank if you don't have now
+  linkedin_id: mengyuan-zhu # Leave blank if you don't have now
   email: zhumengyuan1024@gmail.com  # Leave blank if you don't have now
   cv: # A online CV can be printed as PDF, leave blank if you don't have now
 
