@@ -4,27 +4,37 @@
     detail: Georgia State University
     i18n: location_gsu
   desc:
-    detail: M.S. in Computer Science (GPA 4.0)<br /> Ph.D. in Chemistry  
+    detail: Master of Science - MS Computer Science
     i18n: location_gsu_desc
   date:
-    detail: Aug. 2013 ~ present
+    detail: 2016 - present
     i18n: location_gsu_date
-  job:
-    detail: Software Developer 
+  web:
+    detail: https://www.gsu.edu
+  icon: gsu.png
 
-    i18n: location_gsu_job
-  icon: fa-university
+- name:
+    detail: Georgia State University
+    i18n: location_gsu
+  desc:
+    detail: Doctor of Philosophy - PhD, Chemistry 
+    i18n: location_gsu_desc
+  date:
+    detail: 2013 - present
+    i18n: location_gsu_date
+  web:
+    detail: https://www.gsu.edu
+  icon: gsu.png
 
 - name:
     detail: Shandong University
     i18n: location_shandong
   desc:
-    detail: B.S. in Pharamcy
+    detail: Bachelor of Science - BS, Pharamcy
     i18n: location_shandong_desc
   date:
-    detail: Sep. 2009 ~ Jun. 2013
+    detail: 2009 - 2013
     i18n: location_shandong_date
-  job:
-    detail: Full Stack Developer/Python Developer
-    i18n: location_shandong_job
-  icon: fa-university
+  web:
+    detail: http://www.sdu.edu.cn
+  icon: sdu.png
