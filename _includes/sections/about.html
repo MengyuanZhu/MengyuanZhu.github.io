@@ -8,7 +8,7 @@
     </div>
     <div class="row  ">
         <!-- avatar -->
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="team-member wow zoomIn text-center ">
                 <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="130" width="130" class="img-responsive img-circle" alt="">
                 <h3>{{ site.author.first_name }} {{ site.author.last_name }}</h3>
@@ -62,27 +62,25 @@
         </div>
        
 
-        <div class="col-lg-4 wow zoomIn" >          
-            <div class="container">
+        <div class="col-lg-5 wow zoomIn" >          
+            <table>
                 {% for career in site.data.index.careers %} 
-                <div class="row">
-                            <div class="col-lg-1" >     
-                            <a href="{{ career.web.detail }}">
-                            <img style="width:40px" src="static/assets/img/{{ career.icon }}">
-                            </a>
-                            </div>
-                            <div class="col-lg-3" >          
-                            <span style="font-weight: bold;">{{ career.name.detail }} </span>
-                            
-                                                     
-                            <div >
-                            <span data-i18n="career.{{ career.desc.i18n }}" >{{ career.desc.detail }} </span>
-                            </div>
-                            <div style="color:#555555"> {{ career.date.detail }}</div>
-                            </div>
-                </div>
+               		<tr >
+                            <td style="vertical-align:top">     
+	                            <a href="{{ career.web.detail }}">
+	                            	<img style="width:40px" src="static/assets/img/{{ career.icon }}">
+	                            </a>
+                            </td>
+                            <td style="padding:0 0 0 15px;">          
+                            	<span style="font-weight: bold;">{{ career.name.detail }} </span>
+                            	<br>
+                            	<span data-i18n="career.{{ career.desc.i18n }}" >{{ career.desc.detail }} </span>
+                            	<br>
+                            	<span style="color:#555555"> {{ career.date.detail }}</span>
+                            </td>
+                    </tr>
                 {% endfor %}
-            </div>
+            </table>
         </div>
         
 
