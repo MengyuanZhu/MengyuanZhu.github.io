@@ -1,6 +1,25 @@
-# skills section data
+- name: Programming
+  detail: Proficient in Python. OK with other languages
 
-label: Ability
-id : Programming Language
-aspects:  Python,Java,C++,C#, HTML5,CSS,JavaScript
-percentage: 95, 70, 65, 65, 90, 60, 75
+- name: Machine Learning
+  detail: Keras/Tensorflow/scikit-learn
+
+- name: Database
+  detail: SQL/MongoDB/Redis
+
+- name: Operating System
+  detail: Windows/Ubuntu/CentOS/Debian
+
+- name: Scientific Computing
+  detail: MPI/OpenMP/OpenACC
+
+- name: User Interface
+  detail: Qt/JavaFX
+
+- name: Software Engineering
+  detail: Design Patterns/Documentation
+
+- name: Research Interest
+  detail: Cheminformatics/Computer-Go
+
+

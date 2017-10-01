@@ -12,11 +12,10 @@
   tpl: skills.html
   css: team
 
+
 - id: projects
   i18n: nav.projects
   name: Projects
   tpl: projects.html
   css: project
-
-
 

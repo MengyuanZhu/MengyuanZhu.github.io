@@ -2,115 +2,35 @@
     <div class="row">
         <div class="col-lg-12 text-center" id="i18_skills">
             <div class="navy-line"></div>
-            <h1><span data-i18n="skills.my_skills">Skills</span></h1>
+            <h1><span data-i18n="skills.my_skills">Skills and Awards</span></h1>
         </div>
     </div>
     <div class="row features-block">
 
-        <div class="wow fadeInLeft col-lg-6 text-center" style="margin-bottom: 1cm;">
-            <h4>{{ site.data.index.skills.id }}</h4>
-            <canvas id="{{ site.data.index.skills.id }}" height="250" width="400"></canvas>
+        <div class="wow fadeInLeft col-lg-6" style="margin-bottom: 1cm;">
+            <div class="text-center">
+              <h2><span style="font-weight: bold;font-size: 150%;">Skills</span></h2>
+            </div>
+             {% for skill in site.data.index.skills %}
+                <p style="font-size: 120%;">
+                    <span style="font-weight: bold">{{ skill.name }}</span>
+                    <span>{{ skill.detail }}</span>
+                </p> 
+            {% endfor %}
         </div>
-        <div class="wow fadeInRight col-lg-6 text-center" style="margin-bottom: 1cm;">
-            <h4>{{ site.data.index.skills2.id }}</h4>
-            <canvas id="{{ site.data.index.skills2.id }}" height="250" width="400"></canvas>
-        </div>
 
-        <script>
-        var ctx = document.getElementById("{{ site.data.index.skills.id }}");
-        var data = {
-            labels: "{{ site.data.index.skills.aspects }}".split(","),
-            datasets: [{
-                label: "{{ site.data.index.skills.label }}",
-                backgroundColor: 'rgba(51, 133, 255,0.6)', 
-                hoverBackgroundColor: 'rgba(51, 133, 255,1)',         
-                data: [{{ site.data.index.skills.percentage }}]
-                }]
-        };
-        var myRadarChart = new Chart(ctx, {
-            type: 'horizontalBar',
-            data: data,
-            options: {                
-                legend: {display: false},
-                scales: {                   
-                    xAxes: [{
-                            display: true,
-                            ticks: {
-                                beginAtZero: true,                                
-                                max: 100,
-                                fontSize: 15,
-                                fontColor: "#000"
-                            },                            
-                        }],
-                    yAxes: [{
-                            display: true,
-                            ticks: {
-                                fontSize: 15,
-                                fontColor: "#000"
-                            },                            
-                        }]    
-                },
-                tooltips: {
-                	bodyFontSize: 15,
-			        callbacks: {
-			            label: function(tooltipItem, data) {
-			            	
-			                return "";
-			            }
-			        }
-		    	}
-            }
-        });
-        </script>
-  
-        <script>
-        var ctx = document.getElementById("{{ site.data.index.skills2.id }}");
-        var data = {
-            labels: "{{ site.data.index.skills2.aspects }}".split(","),
-            datasets: [{
-                label: "{{ site.data.index.skills2.label }}",
-                backgroundColor: 'rgba(51, 133, 255,0.6)', 
-                hoverBackgroundColor: 'rgba(51, 133, 255,1)',          
-                data: [{{ site.data.index.skills2.percentage }}],
-                details: "{{ site.data.index.skills2.details }}".split(",")
-                }]
-        };
-        var myRadarChart = new Chart(ctx, {
-            type: 'horizontalBar',
-            data: data,
 
-            options: {                
-                legend: {display: false},
-                scales: {                   
-                    xAxes: [{
-                            display: true,
-                            ticks: {
-                                beginAtZero: true,                                
-                                max: 100,
-                                fontSize: 15,
-                                fontColor: "#000"
-                            },                            
-                        }],
-                    yAxes: [{
-                            display: true,
-                            ticks: {
-                                fontSize: 15,
-                                fontColor: "#000"
-                            },                            
-                        }]    
-                },
-                tooltips: {
-                	bodyFontSize: 15,
-			        callbacks: {
-			            label: function(tooltipItem, data) {
-			            	var value = data.datasets[0].details[tooltipItem.index];
-			                return value;
-			            }
-			        }
-		    	}
-            },
 
-        });
-        </script>
+        <div class="wow fadeInRight col-lg-6 " style="margin-bottom: 1cm;">
+            <div class="text-center">
+              <h2><span style="font-weight: bold;font-size: 150%;">Awards</span></h2>
+            </div>
+            {% for award in site.data.index.awards %}
+                <p style="font-size: 120%;">
+                    <span style="font-weight: bold">{{ award.name }}</span>
+                    <span>{{ award.detail }}</span>
+                </p> 
+            {% endfor %}
+        </div>      
     </div>
 </div>
