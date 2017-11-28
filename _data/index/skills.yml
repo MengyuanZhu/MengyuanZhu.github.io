@@ -1,20 +1,20 @@
 - name: Programming
-  detail: Proficient in Python. OK with other languages
+  detail: Proficient in Python. Familiar with C/C++/Java
 
 - name: Machine Learning
-  detail: Keras/Tensorflow/scikit-learn
+  detail: Keras/Tensorflow/scikit-learn/PyTorch
 
 - name: Database
   detail: SQL/MongoDB/Redis
 
 - name: Operating System
-  detail: Windows/Ubuntu/CentOS/Debian
+  detail: Proficient in Ubuntu/Linux. Familiar with Windows
 
 - name: Scientific Computing
   detail: MPI/OpenMP/OpenACC
 
 - name: User Interface
-  detail: Qt/JavaFX
+  detail: C++/Qt, Java/JavaFX
 
 - name: Software Engineering
   detail: Design Patterns/Documentation
