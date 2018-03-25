@@ -1,14 +1,14 @@
 - name: Programming
-  detail: Proficient in Python. Familiar with C, C++, Java
+  detail: Python, C, C++, Java
 
 - name: Machine Learning
-  detail: Keras, Tensorflow, scikit-learn, PyTorch
+  detail: Keras, Tensorflow, scikit-learn
 
 - name: Database
-  detail: SQL/MySQL/MariaDB/SQLite, MongoDB, Redis
+  detail: SQL, MongoDB, Redis
 
-- name: Operating System
-  detail: Proficient in Ubuntu. Familiar with Windows, CentOS
+- name: Platform
+  detail: Ubuntu, CentOS, Microsoft Azure
 
 - name: Scientific Computing
   detail: MPI, OpenMP, OpenACC
@@ -18,8 +18,5 @@
 
 - name: Software Engineering
   detail: Design Patterns, Documentation
-
-- name: Graphics 
-  detail: OpenGL, OpenCV
 
 

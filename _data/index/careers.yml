@@ -7,7 +7,7 @@
     detail: Master of Science - MS, Computer Science (GPA 4.0)
     i18n: location_gsu_desc
   date:
-    detail: 2016 - present
+    detail: 2016 - 2017
     i18n: location_gsu_date
   web:
     detail: https://www.gsu.edu
@@ -20,7 +20,7 @@
     detail: Doctor of Philosophy - PhD, Chemistry 
     i18n: location_gsu_desc
   date:
-    detail: 2013 - present
+    detail: 2013 - 2018
     i18n: location_gsu_date
   web:
     detail: https://www.gsu.edu
