@@ -1,8 +1,8 @@
 - name: AWS
-  detail: EC2, EKS, Lambda, API Gateway, Kinesis, Route 53, etc.
+  detail: EC2, EKS, Lambda, API Gateway, Kinesis, Route 53, SNS, SQS, etc.
 
 - name: DevOps
-  detail: Docker, Kubernetes, Jenkins, Terraform, Prometheus, etc.
+  detail: Git, Docker, Kubernetes, Jenkins, Terraform, Prometheus, etc.
 
 - name: Database
   detail: MySQL, PostgreSQL, ElasticSearch, Redis, Cassandra, etc.
@@ -17,6 +17,6 @@
   detail: RabbitMQ, ActiveMQ
 
 - name: Network
-  detail: TCP/IP, Load Balancer, VPC Peering, DNS, etc.
+  detail: TCP/IP, Load Balancer, VPC Peering, DNS, CDN, etc.
 
 
