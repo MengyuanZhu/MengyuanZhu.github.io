@@ -1,22 +1,22 @@
-- name: Programming
-  detail: Python, C, C++, Java
+- name: AWS
+  detail: EC2, EKS, Lambda, API Gateway, Kinesis, Route 53, etc.
 
-- name: Machine Learning
-  detail: Keras, Tensorflow, scikit-learn
+- name: DevOps
+  detail: Docker, Kubernetes, Jenkins, Terraform, Prometheus, etc.
 
 - name: Database
-  detail: SQL, MongoDB, Redis
+  detail: MySQL, PostgreSQL, ElasticSearch, Redis, Cassandra, etc.
 
-- name: Platform
-  detail: Ubuntu, CentOS, Microsoft Azure
+- name: Data Processing
+  detail: Athena (Presto), Tensorflow, Pandas, Scikit-learn, etc
 
-- name: Scientific Computing
-  detail: MPI, OpenMP, OpenACC
+- name: Web Development
+  detail: Python, Django, Django REST framework, HTML5, etc
 
-- name: User Interface
-  detail: C++/Qt, Java/JavaFX/Android, C#/UWP
+- name: Message Brokers
+  detail: RabbitMQ, ActiveMQ
 
-- name: Software Engineering
-  detail: Design Patterns, Documentation
+- name: Network
+  detail: TCP/IP, Load Balancer, VPC Peering, DNS, etc.
 
 
