@@ -4,10 +4,10 @@
     detail: Georgia State University
     i18n: location_gsu
   desc:
-    detail: Master of Science - MS, Chemistry 
+    detail: Master of Science - MS, Computer Science 
     i18n: location_gsu_desc
   date:
-    detail: 2013 - 2018
+    detail: 2016 - 2018
     i18n: location_gsu_date
   web:
     detail: https://www.gsu.edu
@@ -17,10 +17,10 @@
     detail: Georgia State University
     i18n: location_gsu
   desc:
-    detail: Master of Science - MS, Computer Science 
+    detail: Master of Science - MS, Chemistry 
     i18n: location_gsu_desc
   date:
-    detail: 2016 - 2018
+    detail: 2013 - 2018
     i18n: location_gsu_date
   web:
     detail: https://www.gsu.edu

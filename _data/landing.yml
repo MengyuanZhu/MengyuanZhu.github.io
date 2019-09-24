@@ -6,6 +6,12 @@
   tpl: about.html
   css:
 
+- id: summary
+  i18n: nav.summary
+  name: Summary
+  tpl: summary.html
+  css: team
+
 - id: skills
   i18n: nav.skills
   name: Skills
